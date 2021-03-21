@@ -132,4 +132,4 @@ dmypy.json
 .vscode
 
 # SQLite
-.sqlite
+db.sqlite
