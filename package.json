@@ -1,0 +1,23 @@
+{
+  "name": "herculeanbackend",
+  "version": "1.0.0",
+  "description": "Backend for Herculean Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/culotta2/HerculeanBackend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/culotta2/HerculeanBackend/issues"
+  },
+  "homepage": "https://github.com/culotta2/HerculeanBackend#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "pg": "^8.7.1"
+  }
+}
