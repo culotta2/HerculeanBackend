@@ -1,19 +1,20 @@
 const express = require('express');
 const app = express();
-pool = require("./database.js");
+pool = require('./database.js');
 
 // Start the app
-app.use(express.json())
+app.use(express.json());
 
 // CRUD Functions
 
 // Create (post)
-app.post("/todos", async (req, res) => {
+app.post('/todos', async (req, res) => {
+    console.log('Oooh wee we tryin');
     try {
         // Try to add the new todo
         const { description } = req.body;
         const newTodo = await pool.query(
-            "INSERT INTO todo (description) VALUES ($1) RETURNING *",
+            'INSERT INTO todo (description) VALUES ($1) RETURNING *',
             [description]
         );
     } catch (err) {
@@ -23,5 +24,5 @@ app.post("/todos", async (req, res) => {
 
 
 app.listen(3000, () => {
-    console.log("Server is listening")
+    console.log('Server on port 3000');
 })
